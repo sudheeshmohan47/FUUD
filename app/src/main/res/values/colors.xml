@@ -11,9 +11,6 @@
     <color name="font_grey">#4c4c4c</color>
     <color name="bg_grey">#e3e3e3</color>
     <color name="yellow">#FFFDEC00</color>
-
-
-
-
+    <color name="com_facebook_blue">#ff3b5998</color>
 
 </resources>
