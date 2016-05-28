@@ -17,6 +17,9 @@
     <string name="restaurant_address">Address</string>
     <string name="price">Price</string>
     <string name="welcome_text">Welcome\n to </string>
+    <string name="login_facebook">Connect with Facebook</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="have_an_account">Have an account? Log in.</string>
 
 
     <!-- Rating Bar strings -->

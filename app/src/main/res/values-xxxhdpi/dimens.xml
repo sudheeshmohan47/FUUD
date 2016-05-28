@@ -3,4 +3,8 @@
 
 
     <dimen name="login_button_height">50.0dip</dimen>
+    <dimen name="welcome_button_text_size">22sp</dimen>
+    <dimen name="welcome_text_size">20sp</dimen>
+
+
 </resources>

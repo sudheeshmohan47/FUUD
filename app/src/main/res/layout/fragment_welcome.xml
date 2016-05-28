@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:padding="10dp"
+    android:gravity="center_horizontal">
+
+
+<com.foodu.android.Widgets.CustomThinTextView
+    android:id="@+id/txtWelcome"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textSize="@dimen/login_welcome_textsize"
+    android:text="welcome\n to FUUD"
+    android:textColor="@android:color/white"
+    android:gravity="center_horizontal"
+    android:layout_above="@+id/viewMiddle"
+    android:layout_centerHorizontal="true" />
+
+    <View
+        android:id="@+id/viewMiddle"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_centerVertical="true">
+    </View>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/bg_oval_facebookblue">
+
+            <ImageView
+                android:layout_width="@dimen/login_button_height"
+                android:layout_height="@dimen/login_button_height"
+                android:src="@drawable/facebook"
+                android:padding="10dp" />
+
+            <TextView
+                android:id="@+id/txtFacebook"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/white"
+                android:gravity="center_horizontal"
+                android:text="@string/login_facebook"
+                android:textSize="@dimen/welcome_button_text_size"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/login_button_height"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="20dp"
+            android:text="@string/sign_up"
+            android:gravity="center"
+            android:background="@drawable/bg_oval_red"
+            android:textColor="@color/white"
+            android:textSize="@dimen/welcome_button_text_size"
+            />
+
+        <com.foodu.android.Widgets.CustomTextView
+            android:id="@+id/txtLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:text="@string/have_an_account"
+            android:textColor="@color/white"
+            android:textSize="@dimen/welcome_text_size"
+            />
+    </LinearLayout>
+</RelativeLayout>
