@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gradient">
+<SurfaceView
+    android:id="@+id/svBackground"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:layout_alignParentTop="true"
+    android:layout_centerHorizontal="true" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_gradient"></View>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        >
+        <com.foodu.android.Widgets.CustomThinTextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textColor="@android:color/white"
+            android:layout_margin="5dp"
+            android:textSize="80sp"
+            android:text="FUUD"/>
+        <com.foodu.android.Widgets.CustomEdittext
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/white"
+            android:textSize="@dimen/login_text_size"
+            android:layout_margin="5dp"
+            android:paddingBottom="20dp"
+            android:backgroundTint="@android:color/white"
+            android:hint="FIRST NAME"/>
+        <com.foodu.android.Widgets.CustomEdittext
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/white"
+            android:textSize="@dimen/login_text_size"
+            android:layout_margin="5dp"
+            android:paddingBottom="20dp"
+            android:backgroundTint="@android:color/white"
+            android:hint="LAST NAME"/>
+        <com.foodu.android.Widgets.CustomEdittext
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/white"
+            android:textSize="@dimen/login_text_size"
+            android:layout_margin="5dp"
+            android:paddingBottom="20dp"
+            android:backgroundTint="@android:color/white"
+            android:hint="EMAIL"/>
+        <com.foodu.android.Widgets.CustomEdittext
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/white"
+            android:textSize="@dimen/login_text_size"
+            android:layout_margin="5dp"
+            android:paddingBottom="20dp"
+            android:inputType="textPassword"
+            android:backgroundTint="@android:color/white"
+            android:hint="PASSWORD"/>
+        <com.foodu.android.Widgets.CustomEdittext
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/white"
+            android:textSize="@dimen/login_text_size"
+            android:layout_margin="5dp"
+            android:backgroundTint="@android:color/white"
+            android:paddingBottom="20dp"
+            android:hint="CONFIRM PASSWORD"/>
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#dd1040"
+            android:textColor="@android:color/white"
+            android:layout_margin="10dp"
+            android:text="LOGIN"
+            android:textSize="18sp"
+            style="@style/Widget.AppCompat.Button.Colored"/>
+
+    </LinearLayout>
+</RelativeLayout>

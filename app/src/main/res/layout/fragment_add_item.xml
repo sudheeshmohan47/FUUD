@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    >
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></LinearLayout>
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbarItem"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimary" />
+
+    </android.support.design.widget.AppBarLayout>
+
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/card_margin">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            style="@style/Widget.CardContent">
+
+            <com.foodu.android.Widgets.RobotoTextview
+                android:text="Item Details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/heading_font_size"
+                android:layout_marginBottom="5dp"
+                android:textStyle="bold"
+                android:paddingLeft="5dp"/>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="@dimen/text_input_margin"
+                android:layout_marginLeft="@dimen/text_input_margin"
+                android:layout_marginRight="@dimen/text_input_margin">
+
+                <com.foodu.android.Widgets.CustomEdittext
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/title"
+                    android:singleLine="true"
+                    android:textColor="@color/font_grey"
+                    android:textSize="@dimen/edittext_text_size"
+                    android:id="@+id/edtTitle" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="@dimen/text_input_margin"
+                android:layout_marginLeft="@dimen/text_input_margin"
+                android:layout_marginRight="@dimen/text_input_margin">
+
+                <com.foodu.android.Widgets.CustomEdittext
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/desc"
+                    android:singleLine="true"
+                    android:textSize="@dimen/edittext_text_size"
+                    android:inputType="textMultiLine"
+                    android:textColor="@color/font_grey"
+                    android:scrollbars="vertical"
+                    android:id="@+id/estDesc" />
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="@dimen/text_input_margin"
+                android:layout_marginLeft="@dimen/text_input_margin"
+                android:layout_marginRight="@dimen/text_input_margin">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/price"
+                android:singleLine="true"
+                android:textSize="@dimen/edittext_text_size"
+                android:textColor="@color/font_grey"
+                android:id="@+id/edtPrice"
+                android:inputType="numberDecimal"
+                />
+
+</android.support.design.widget.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+            </LinearLayout>
+            <com.foodu.android.Widgets.RobotoTextview
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/edittext_text_size"
+                android:text="@string/rating"
+                android:layout_marginLeft="@dimen/text_input_margin"
+                android:layout_marginRight="@dimen/text_input_margin"/>
+            <com.foodu.android.RatingBar.ProperRatingBar
+                android:id="@+id/ratingBar"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:textSize="30sp"
+                android:layout_marginLeft="@dimen/text_input_margin"
+                android:layout_marginRight="@dimen/text_input_margin"
+                android:stepSize=".5"
+                app:prb_symbolicTick="★"
+                app:prb_clickable="true"
+                app:prb_tickSpacing="10sp"
+                app:prb_symbolicTickNormalColor="@android:color/darker_gray"
+                app:prb_symbolicTickSelectedColor="@color/yellow"
+                app:prb_totalTicks="5" >
+            </com.foodu.android.RatingBar.ProperRatingBar>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/colorAccent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"></View>
+            <com.foodu.android.Widgets.RobotoTextview
+                android:text="Restaurant Details"
+                android:textSize="@dimen/heading_font_size"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:paddingLeft="5dp"/>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="@dimen/text_input_margin"
+                android:layout_marginLeft="@dimen/text_input_margin"
+                android:layout_marginRight="@dimen/text_input_margin">
+
+                <com.foodu.android.Widgets.CustomEdittext
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/restaurant_name"
+                    android:singleLine="true"
+                    android:textSize="@dimen/edittext_text_size"
+                    android:inputType="textMultiLine"
+                    android:textColor="@color/font_grey"
+                    android:scrollbars="vertical"
+                    android:id="@+id/edtResName" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="@dimen/text_input_margin"
+                android:layout_marginLeft="@dimen/text_input_margin"
+                android:layout_marginRight="@dimen/text_input_margin">
+
+                <com.foodu.android.Widgets.CustomEdittext
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/restaurant_address"
+                    android:singleLine="true"
+                    android:textSize="@dimen/edittext_text_size"
+                    android:inputType="textPostalAddress"
+                    android:textColor="@color/font_grey"
+                    android:scrollbars="vertical"
+                    android:id="@+id/edtResAddress" />
+
+            </android.support.design.widget.TextInputLayout>
+        </LinearLayout>
+        </android.support.v7.widget.CardView>
+        </android.support.v4.widget.NestedScrollView>
+    </android.support.design.widget.CoordinatorLayout>

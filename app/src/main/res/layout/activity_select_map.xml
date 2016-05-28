@@ -1,0 +1,35 @@
+<RelativeLayout
+    android:id="@+id/relParent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    >
+<fragment
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/map"
+    tools:context="com.example.qa_2.materialdesign.SelectMapActivity"
+    android:name="com.google.android.gms.maps.SupportMapFragment"
+    android:layout_above="@+id/btnSelectMapLoc"/>
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/imgType"
+        android:layout_alignParentLeft="true"
+        android:layout_above="@id/btnSelectMapLoc"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="30dp"
+
+        />
+    <Button
+        android:id="@+id/btnSelectMapLoc"
+        android:text="Select Location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+     />
+
+
+</RelativeLayout>
